@@ -1,0 +1,249 @@
+ body {
+     background-color: #F7ECDE;
+ }
+
+ main {
+     min-height: 100vh;
+     background-color: #F7ECDE;
+ }
+
+ .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ h1 {
+     font-family: 'Pacifico', cursive;
+     font-size: 50px;
+     line-height: 60px;
+     margin-bottom: 15px;
+     padding: 8px;
+     color: #352e28;
+     position: relative;
+     z-index: 3;
+ }
+
+ h1::before {
+     content: "";
+     width: 95%;
+     height: 25%;
+     position: absolute;
+     bottom: 10px;
+     background-color: #fec260;
+     z-index: -2;
+ }
+
+ h2 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Righteous', cursive;
+     font-size: 1.5rem;
+     line-height: 30px;
+     margin-bottom: 12px;
+     background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+     background-image: -o-linear-gradient(left, #3ca55c, #b5ac49);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ h2 i {
+     padding: 7px;
+ }
+
+ .body {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     flex-direction: column;
+     width: 100%;
+     padding: 5px 3px;
+     margin-top: 5px;
+     gap: 4px;
+
+ }
+
+ .site {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     width: 100%;
+     margin-bottom: 30px;
+ }
+
+ label {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 600;
+     line-height: 24px;
+     color: #212529;
+     margin-left: 70px;
+
+ }
+
+ .input {
+     border-radius: 10px;
+     padding: 10px;
+     border-color: transparent;
+     margin: 5px 70px 25px 70px;
+ }
+
+ label i {
+     padding: 5px;
+     margin-bottom: 5px;
+ }
+
+ .input:focus {
+     border-color: #d99c39;
+     -webkit-box-shadow: 0 0 0 0.25rem #fec26055;
+     box-shadow: 0 0 0 0.25rem #fec26055;
+     outline: 0;
+ }
+
+ #nameRules {
+     color: red;
+     margin: 0 70px;
+ }
+
+ #linkRules {
+     color: red;
+     margin: 0 70px;
+ }
+
+ .line {
+     border: none;
+     border-bottom: 2px dotted black;
+     width: 90%;
+ }
+
+ .sub {
+     padding: 10px 45px;
+     margin-bottom: 10px;
+     color: #fff;
+     background-color: #d1512d;
+     border-radius: 10px;
+     border-color: #d1512d;
+     font-size: medium;
+     cursor: pointer;
+ }
+
+ .sub:hover {
+     color: #fff;
+     background-color: #bb4120;
+     border-color: #a03315;
+ }
+
+ table {
+     text-align: center;
+     background-color: #F8F9FA;
+     margin-top: 5px;
+     padding: 7px;
+ }
+
+ .tab {
+     display: flex;
+     flex-direction: column;
+     width: 90%;
+ }
+
+ table thead tr th {
+     font-weight: bold;
+     font-size: 17px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .btn-visit {
+     color: #fff;
+     background-color: #9eb23b;
+     border-color: #9eb23b;
+     border-radius: 6px;
+     padding: 8px;
+     text-align: center;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
+ .btn-visit a {
+     text-decoration: none;
+     color: #fff;
+ }
+
+ .btn-visit:hover {
+     color: #fff;
+     background-color: #8a9e23;
+     border-color: #6e8018;
+ }
+
+ .btn-delete {
+     color: #fff;
+     background-color: #eb1d36;
+     border-color: #eb1d36;
+     border-radius: 6px;
+     padding: 8px;
+     text-align: center;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
+ .btn-delete:hover {
+     color: #fff;
+     background-color: #d30820;
+     border-color: #ba081d;
+ }
+
+ .index {
+     font-size: 16px;
+     padding: 8px;
+     font-weight: bold;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .name {
+     font-size: 16px;
+     padding: 8px;
+     text-transform: capitalize;
+     font-weight: bold;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ td i {
+     margin: 0 2px;
+ }
+
+ td hr {
+     border: none;
+     width: 100%;
+     border-top: 1px solid gainsboro;
+ }
+
+ @media (max-width: 576px) {
+     h2 {
+         font-size: 16px;
+     }
+
+     .input {
+         padding: 8px;
+         margin: 5px 45px;
+     }
+
+     label {
+         margin-left: 45px;
+     }
+
+     .btn-visit {
+         padding: 2px;
+     }
+
+     .btn-delete {
+         padding: 2px;
+     }
+
+     #nameRules {
+         margin: 0 45px;
+     }
+
+     #linkRules {
+         margin: 0 45px;
+     }
+ }

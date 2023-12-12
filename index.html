@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="img/2899445.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="head">Bookmarker</h1>
+            <hr class="line">
+            <h2 class="head2">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="body">
+                <div class="site">
+                    <label for="siteName">
+                        <i class="dech2 fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name
+                    </label>
+                    <input type="text" class="input" placeholder="Bookmark Name" id="siteName">
+                    <p id="nameRules">
+                    </p>
+                </div>
+                <div class="site">
+                    <label for="siteLink">
+                        <i class="fa-solid fa-link pe-1"></i>
+                        Site URL
+                    </label>
+                    <input type="url" class="input" placeholder="Website URL" id="siteLink">
+                    <p id="linkRules">
+                    </p>
+                </div>
+            </div>
+
+            <button class="sub" id="btn">Submit
+            </button>
+            <hr class="line">
+            <div class="tab">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableContent">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
